@@ -277,17 +277,17 @@ nav{
 
 
 .logo {
-    background: url('assets/img/logo-JG-w.svg') no-repeat center  !important;
-    margin:0 0!important;
-    top:23vh;
-    width:40%;
-    height:40%;
-    opacity: 1;
-    background-repeat: no-repeat !important;
+    background: url('assets/img/logo-JG-w.svg')!important; 
+    background-repeat:no-repeat!important;
+    background-position:center !important;
     background-size: contain !important;
+    margin:0 0!important;
     z-index: 2000!important;
-    opacity:0.8;
-    overflow:hidden;
+    top:23vh!important;
+    width:60%!important;
+    height:60%!important;
+    opacity:1!important;
+    overflow:hidden!important;
 }
 
 .under-logo  {
