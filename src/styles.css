@@ -258,7 +258,7 @@ nav{
   }
   .parallax{
     position:relative;
-     background: url("./assets/img/sea-sky-horizon.jpg") no-repeat center center;
+     background: url("assets/img/sea-sky-horizon.jpg") no-repeat center center;
      background:url("https://media.giphy.com/media/7GHRDluBmx9O8/giphy.gif") no-repeat center center fixed;
      background:url("http://media.giphy.com/media/Cf4qsIEIrFs6Q/giphy.gif") no-repeat center center fixed;
      background-attachment: scroll !important;
@@ -277,7 +277,7 @@ nav{
 
 
 .logo {
-    background: url('./assets/img/logo-JG-w.svg') no-repeat center  !important;
+    background: url('assets/img/logo-JG-w.svg') no-repeat center  !important;
     margin:0 0!important;
     top:23vh;
     width:40%;
@@ -293,7 +293,7 @@ nav{
 .under-logo  {
     z-index:250;
     margin:0 0!important;
-    background: url('./assets/img/white-sunlight992.png') no-repeat center !important;
+    background: url('assets/img/white-sunlight992.png') no-repeat center !important;
     background-repeat: no-repeat;
     bottom: 0%;
     left: 0;
@@ -333,7 +333,7 @@ nav{
     height:101vh;
 
  
-  background: url('./assets/img/cosmo_pyramids576.jpg') no-repeat top ;
+  background: url('assets/img/cosmo_pyramids576.jpg') no-repeat top ;
   background-size: cover;
   
 
@@ -529,11 +529,8 @@ h6{
         height:100vw!important;
         margin-top:-6%;
     
-     
-      background: url('./assets/img/cosmo_pyramids760.jpg') no-repeat top ;
+      background: url('assets/img/cosmo_pyramids760.jpg') no-repeat top ;
       background-size: cover;
-      
-    
     }
     
     #logo-jg {
@@ -542,9 +539,6 @@ h6{
      
       width: 60%!important;
       height: 60%!important;
-    
-    
-    
     }
 
     .display-3{
@@ -646,7 +640,7 @@ h6{
         right:0;
         
         height:auto!important;
-      background: url('./assets/img/cosmo_pyramids992.jpg') no-repeat top ;
+      background: url('assets/img/cosmo_pyramids992.jpg') no-repeat top ;
       background-size: cover;
     }
     #logo-jg {
@@ -817,21 +811,15 @@ h6{
     right:0;
     height:auto!important;
 
- 
-  background: url('./assets/img/cosmo_pyramids1200.jpg') no-repeat top ;
+  background: url('assets/img/cosmo_pyramids1200.jpg') no-repeat top ;
   background-size: cover;
-  
-
 }
 
 #logo-jg {
     margin-top:28vh!important; 
   width: 45%!important;
   height: 45%!important;
-
-
 }
-
     .phrase {      
         padding-top:8vh;
         font-size: 10vw;
@@ -902,7 +890,7 @@ h6{
    }
 
     .background-picture{
-        background: url('./assets/img/cosmo_pyramids.jpg') no-repeat center ;
+        background: url('assets/img/cosmo_pyramids.jpg') no-repeat center ;
         z-index: 0 !important;
         background-size: cover;
         top:-10vh;
