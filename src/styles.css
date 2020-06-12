@@ -285,7 +285,7 @@ nav{
     opacity: 1;
     background-repeat: no-repeat !important;
     background-size: contain !important;
-    z-index: 1000!important;
+    z-index: 2000!important;
     opacity:0.8;
     overflow:hidden;
 }
