@@ -1,7 +1,68 @@
-
+nav{
+    z-index:8000 !important;
+   visibility:visible; 
+}
+#hexag-menu-top {
+    border-bottom: 9px solid var(--main-color);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+#hexag-menu-middle {
+    margin-top: -3px;
+    width: 30px;
+    height: 15px;
+    background-color: var(--main-color);
+}
+#hexag-menu-bottom {
+    border-top: 9px solid var(--main-color);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler span {
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255,0.5);
+    height: 3px;
+    width: 15px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+}
+.dropdown-item:hover{
+    background-color:rgb(57, 180, 200) !important;
+    background-color:rgba(67, 165, 190,0.1) !important;
+}
+.dropdown-item:active{
+    background-color:rgb(67, 165, 190) !important;
+    background-color:rgba(67, 165, 190,0.3) !important;
+}
+.dropdown-divider{color:rgb(57, 180, 200) !important;}
+.nav-link, .dropdown-item, h1 {text-transform: uppercase;}
+.dropdown-item{color:var(--main-color)!important;}
 
 .nothing{
     background-color:transparent!important;
+}
+.flip_H{
+    display: inline-block; 
+    transform: scale(-1, 1) !important;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+  }
+  .navbar-text{
+    font-weight:600!important;
+    font-size: 1.2em !important; 
+    color:rgba(255,255,255,0.5)!important;
 }
 /* 
 .about,.portfolios,.technologies,.parcours,.contacts{
@@ -53,3 +114,11 @@
         border-bottom:10px solid transparent;
     }
 }
+
+/* /////////////////////////////////////
+             MAX 992 pxpX 
+ /////////////////////////////////////*/
+ @media only screen and (max-width: 992px) {
+    .navbar {background-color:var(--main-color-02)}
+  }
+  

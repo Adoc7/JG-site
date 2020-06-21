@@ -1,0 +1,64 @@
+#centered-phone {
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, -50%);
+    top:50%;
+    font-size:5.5vw;
+    font-weight:800;
+    background-color: rgba(255,255,255,0.7);
+    padding-left:3vw;
+    padding-right:3vw;
+    color:var(--main-color-02);
+    -webkit-text-stroke-color:var(--main-color-02);
+    text-decoration: none;
+    border:1vw solid var(--main-color-02);
+   }
+
+   textarea {
+    resize: none!important;
+  }
+  span.input-group-text, .browser-default, .form-control, .custom-select:active .browser-default:active{
+    background-color:var(--main-color-02) !important;
+    background-color:rgb(67, 165, 190) !important;
+    border:1px var(--main-color) solid !important;
+    color:white !important;
+    font-weight:100!important;
+    border:2px var(--main-color)solid !important;
+/*     background-color:rgb(67, 165, 190) !important;
+    background-color:rgba(67, 165, 190,0.3) !important; */
+  }
+  span.input-group-text{padding-right:1px!important;}
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    background-color:rgb(67, 165, 190) !important;
+    color:white !important;
+    font-weight:100!important;
+    opacity: 1; /* Firefox */
+    border:0 var(--main-color)solid !important;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    background-color:rgb(67, 165, 190) !important;
+    color:var(--main-color-01) !important;
+    border:0 var(--main-color)solid !important;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color:var(--main-color-01) !important;
+    border:0 var(--main-color)solid !important;
+  }
+      input:focus-within{
+        background-color:rgb(67, 165, 190) !important;
+      }
+ /*Customisation checkbox*/
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: var(--main-color)!important;
+  }
+  .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 1px #212121, 0 0 0 0.2rem rgba(0, 0, 0, 0.25)!important;
+  }
+  .custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+    background-color: #212121!important;
+  }
+  .custom-control-label::before{
+        background-color: #212121!important;
+        border:2px rgba(255, 255, 255,0.7) solid !important;
+        border-radius: 2px!important;
+  }
