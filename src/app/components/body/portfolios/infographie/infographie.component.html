@@ -1,0 +1,94 @@
+<div id="info" class="offset-0 col-12  white border border-white  text-left
+                      mt-0 pt-4 pt-sm-0  pt-md-5 mt-sm-3 mt-md-2 mt-lg-2 mt-xl-1">               
+
+                      <app-modal></app-modal>
+                      <div class="container">        
+        <div class="row py-5">
+            <div class="col-12  col-sm-3    
+                         text-center
+                         pr-lg-4 
+                         white border border-white">          
+                <div class="contain">        
+                    <div><img src="assets/img/polygone-titre1.jpg" class="img-fluid" alt="photo"></div>
+                    <div class="centered"><i class="fab fa-adobe"></i></div>
+                </div>
+            </div>
+            <div class="title-part-1 col-12 col-sm-9 col-md-9 col-lg-9     
+                text-center text-sm-left
+                mt-0 pt-4 pt-sm-0  pt-md-4 mt-sm-3 mt-md-2 mt-lg-2 mt-xl-1
+                white border border-white">              
+                <div class="mt-sm-0 mt-md-1 mt-lg-0"><h1>infographie</h1></div>
+                <div class="trait mt-sm-0 mt-md-2 mt-lg-1 mt-xl-1 text-center "></div>
+            </div>
+        </div>
+    </div>
+</div>               
+<div class="container-fluid">      
+    <div class="row text-center mb-5 px-sm-5">
+        <div class="col-12 mb-4">              
+            <h2 class="display-3">Quelques travaux graphiques</h2>
+        </div>
+    <div *ngFor="let infographie of infographies" class="col-12 col-sm-6 col-md-6 col-xl-3 mb-4"> 
+        <div class="view overlay zoom hoverable">  
+
+            <img src="{{infographie.path}}"  class="w-100 h-100">        
+            <a  href="{{infographie.modal}}"  data-toggle="modal"  class="mask flex-center rgba-black-light">                                                
+            <p class="white-text"><i class="fas fa-search fa-3x"></i></p>       
+            </a>
+        </div>               
+    </div>
+
+<!--     <div class="col-12 col-sm-6 col-md-6 col-xl-3 mb-4"> 
+        <div class="view overlay zoom hoverable">            
+            <img src="assets/img/thumb-graph-02.jpg"  class="w-100 h-100">
+
+            <a  href="#myModal02"  data-toggle="modal"  class="mask flex-center rgba-black-light">                                                
+            <p class="white-text"><i class="fas fa-search fa-3x"></i></p>       
+            </a>
+        </div>               
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-xl-3 mb-4"> 
+    <div class="view overlay zoom hoverable">            
+        <img src="assets/img/thumb-graph-03.jpg"  class="w-100 h-100">
+
+        <a  href="#myModal03"  data-toggle="modal"  class="mask flex-center rgba-black-light">                                                
+        <p class="white-text"><i class="fas fa-search fa-3x "></i></p>       
+        </a>
+    </div>               
+    </div>
+        <div class="col-12 col-sm-6 col-md-6 col-xl-3 mb-4"> 
+            <div class="view overlay zoom hoverable">            
+                <img src="assets/img/thumb-graph-04.jpg" class="w-100 h-100 ">
+
+                <a  href="#myModal04"  data-toggle="modal"  class="mask flex-center rgba-black-light">                                                
+                <p class="white-text"><i class="fas fa-search fa-3x "></i></p>       
+                </a>
+            </div>               
+        </div>   -->                                
+    </div>
+</div>
+<div class="col-12 text-center pt-0">
+    <p>Vous souhaitez en savoir plus ?</p>                   
+    <h2 class="title-part-2 pb-1"><strong>Visitez au format PDF</strong></h2>  
+</div>
+<div class="row mx-auto">
+    <div class="col-12 col-lg-6 mb-2  pl-sm-5 pr-sm-5 pl-lg-5 pr-lg-3 ">   
+        <a href="assets/img/jg_book_print_web.pdf#toolbar=0"  
+        target="_blank"            
+        role="button" 
+        class="btn btn-outline-primary btn-block"
+        style="color:rgba(67, 165, 190,1)!important;  border:6px solid rgba(67, 165, 190,1)!important;">     
+        <h3 class="btn-text"> <i class="fas fa-file-pdf fa-1x"></i> premier book</h3>
+        </a>         
+    </div>
+    <div class="col-12 col-lg-6 mb-2  pl-sm-5 pr-sm-5 pl-lg-3 pr-lg-5 ">
+        <a href="assets/img/book_print.pdf#toolbar=0"  
+        target="_blank"            
+        role="button" 
+        class="btn btn-outline-primary btn-block"
+        style="color:rgba(67, 165, 190,1)!important;  border:6px solid  rgba(67, 165, 190,1)!important;">     
+        <h3 class="btn-text"> <i class="fas fa-file-pdf fa-1x"></i> deuxième book</h3>
+        </a>  
+        <div id="draw"></div>       
+    </div>
+</div>

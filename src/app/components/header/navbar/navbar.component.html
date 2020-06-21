@@ -1,9 +1,8 @@
 <nav class="px-lg-4 px-xl-5 navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <a class="px-xl-5 navbar-brand js-scrollTo" 
-        (click)="toHome()"
+    <a class="px-xl-5 navbar-brand" 
+    [routerLink]="['']" pageScroll href="#home" 
        > <img src='assets/img/logo-JG-w.svg' alt="Logo JG" style='opacity:1; max-width:40px;'/>
     </a>
-        
     <button class="navbar-toggler" type="button" 
             data-toggle="collapse" data-target="#navbarSupportedContent" 
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,45 +16,34 @@
     </button>
     <div class="collapse navbar-collapse pr-lg-2 pr-xl-3" id="navbarSupportedContent">
         <ul class=" navbar-nav mr-auto">
-          
-          
             <li class="nav-item">
-                <a class="nav-link" [ngClass]="{'about':about, 'nothing':nothing}" (click)="toAbout()"><i class="fa fa-user-circle"></i> à propos</a>         
+                <a class="nav-link"  [routerLink]="['apropos']" routerLinkActive="is-active"  fragment="about"><i class="fa fa-user-circle"></i> à propos</a>         
             </li>
-        
-            <div class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" [ngClass]="{'portfolios':portfolios, 'nothing':nothing}" (click)="toDev()" data-toggle="dropdown"><i class="fas fa-book-open"></i> portfolios </a>
-                
+            <div class="nav-item dropdown">         
+                   <a class="nav-link dropdown-toggle" pageScroll href="#dev" [routerLink]="['portfolios']" fragment="dev"  routerLinkActive="is-active" fragment="dev" data-toggle="dropdown"><i class="fas fa-book-open"></i> portfolios</a>
                    <div class="dropdown-menu">     
-                       <a class="dropdown-item" (click)="toDev()"><i class="fas fa-code"></i> développement</a>
-                       <a class="dropdown-item" (click)="toInfographic()"><i class="fab fa-adobe"></i> INFOGRAPHIE</a>
-                       <a class="dropdown-item" (click)="toDraw()"><i class="fas fa-pencil-alt"></i> DESSINS</a>
-                   </div>      
+                       <a class="dropdown-item" [routerLink]="['portfolios']" pageScroll href="#developpement" fragment="dev"><i class="fas fa-code"></i> développement</a>
+                       <a class="dropdown-item" [routerLink]="['portfolios']" pageScroll href="#infographie" fragment="info"><i class="fab fa-adobe"></i> INFOGRAPHIE</a>
+                       <a class="dropdown-item" [routerLink]="['portfolios']" pageScroll href="#dessins" fragment="draw"><i class="fas fa-pencil-alt"></i> DESSINS</a>       
+                    </div>      
                 </div>
-
             <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" [ngClass]="{'technologies':technologies, 'nothing':nothing}" (click)="toGraphic()" data-toggle="dropdown" ><i class="fas fa-cog"></i>technologies</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" (click)="toGraphic()"><i class="fab fa-adobe"></i> graphisme</a>
-                        <a class="dropdown-item" (click)="toDevF()"><i class="fas fa-code"></i> dév front-end</a>
-                        <a class="dropdown-item" (click)="toDevB()"><i class="fab fa-symfony"></i> dév back-end</a>
+                        <a class="nav-link dropdown-toggle" [routerLink]="['technologies']" routerLinkActive="is-active" pageScroll href="#graph" fragment="graph" data-toggle="dropdown" ><i class="fas fa-cog"></i> technologies</a>
+                       <div class="dropdown-menu" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+                        <a class="dropdown-item" [routerLink]="['technologies']" pageScroll href="#logiciels" fragment="logiciels"><i class="fab fa-adobe" ></i> graphisme</a>
+                        <a class="dropdown-item" [routerLink]="['technologies']" pageScroll href="#devF" fragment="devF"><i class="fas fa-code"></i> dév front-end</a>
+                        <a class="dropdown-item" [routerLink]="['technologies']" pageScroll href="#devB" fragment="devB"><i class="fab fa-symfony" ></i> dév back-end</a>
                     </div>
                 </div>
-
                 <li class="nav-item">
-                    <a class="nav-link" [ngClass]="{'parcours':parcours, 'nothing':nothing}" (click)="toCourse()"><i class="fas fa-briefcase"></i> parcours</a>
+                <a class="nav-link" [routerLink]="['parcours']" routerLinkActive="is-active" pageScroll href="#course" fragment="course"><i class="fas fa-briefcase"></i> parcours</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link js-scrollTo" [ngClass]="{'contacts':contacts, 'nothing':nothing}"  href="#contacts" target="_self" (click)="toContacts()"><i class="fas fa-comments"></i> contacts</a>
+                  <a class="nav-link" pageScroll href="#contacts"><i class="fas fa-comments"></i> contacts</a>
                 </li>              
-            
         </ul>
         <span class="navbar-text align-top d-none d-lg-block">
-            
            <i class="fas fa-phone flip_H "></i> 06 83 59 81 21             
         </span> 
     </div>
 </nav>
-
-
-

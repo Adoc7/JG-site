@@ -1,0 +1,63 @@
+<div>
+    <div class="col-12  white border border-white  text-left">
+    <div class="container">
+        <div class="row py-5 mt-5">
+            <div class="col-12  col-sm-3    
+                        text-center
+                        pr-lg-4 
+                        white border border-white ">
+                <div class="contain">        
+                    <div><img src="assets/img/polygone-titre1.jpg" class="img-fluid" alt="dessins"></div>
+                    <div class="centered "><i class="fas fa-pencil-alt"></i></div>
+                </div>
+             </div>
+             <div class="title-part-1 col-12 col-sm-9 col-md-9 col-lg-9     
+                         text-center text-sm-left
+                         mt-0 pt-4 pt-sm-0  pt-md-4 mt-sm-3 mt-md-2 mt-lg-2 mt-xl-1
+                         white border border-white">       
+             <div class="mt-sm-0 mt-md-1 mt-lg-0"><h1>dessins</h1></div>
+             <div class="trait mt-sm-0 mt-md-2 mt-lg-1 mt-xl-1 text-center "></div>
+             </div>                 
+            </div>
+        </div>
+     </div>
+<!-- GALERIE DE PORTRAITS -->
+<!-- Graphites -->
+<div class="container-fluid">      
+    <div class="row text-center mb-5 px-sm-5">           
+        <div class="col-12   text-center pt-5 ">
+            <p>Portraits dessinés en noir et blanc aux</p>                   
+            <h2 class="title-part-2 pb-1">crayons graphites</h2> 
+        </div>
+        <div *ngFor="let graph of graph_draws" class="col-12 col-sm-6 col-md-4  mb-4 "> 
+            <div class="view overlay zoom hoverable">            
+                <img src="{{graph.path}}" alt={{graph.name}}  class="w-100 h-100">        
+                <a  href="{{graph.modal}}"  data-toggle="modal"  class="mask flex-center rgba-black-light">                                                
+                    <p class="white-text"><i class="fas fa-search fa-3x"></i></p>       
+                </a>
+            </div>               
+        </div>
+<!-- Pastels -->
+        <div class="col-12   text-center pt-5">
+            <p>Portraits dessinés en couleur avec des</p>                   
+            <h2 class="title-part-2 pb-1">techniques pastels et mixtes</h2> 
+        </div>
+        <div *ngFor="let pastel of pastel_draws" class="col-12 col-sm-6 col-md-4 mb-4"> 
+            <div class="view overlay zoom hoverable">            
+                <img src="{{pastel.path}}" alt="{{pastel.name}}"  class="w-100 h-100 ">
+               
+                <a href="{{pastel.modal}}"  data-toggle="modal"  class="mask flex-center rgba-black-light">                                                
+                    <p class="white-text"><i class="fas fa-search fa-3x "></i></p>       
+                </a>
+            </div>               
+        </div>    
+        </div>
+    </div>
+</div>
+<div class="col-12   text-center pt-0">
+    <p>Vous souhaitez en voir plus ?</p>                   
+    <h2 class="title-part-2 pb-1"><strong>Rendez-vous sur</strong></h2> 
+</div>              
+<div class="col-6 mx-auto mb-2 ">
+    <a href="https://www.instagram.com/julien_goscicki/" target="_blank" class="btn btn-outline-primary btn-block" target="_blank" role="button"><h3 class="btn-text"> <i class="fab fa-instagram fa-1x"></i> <span class="d-none d-sm-inline"> instagram</span></h3></a>      
+</div>

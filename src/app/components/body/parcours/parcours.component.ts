@@ -5,7 +5,7 @@ declare var $:any;
 @Component({
   selector: 'app-parcours',
   templateUrl: './parcours.component.html',
-  styleUrls: ['./parcours.component.css']
+  styleUrls: ['./parcours.component.scss']
 })
 export class ParcoursComponent implements OnInit {
 

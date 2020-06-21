@@ -1,0 +1,55 @@
+
+
+.nothing{
+    background-color:transparent!important;
+}
+/* 
+.about,.portfolios,.technologies,.parcours,.contacts{
+    background-color:rgba(67, 165, 190,0.8)!important;
+    /* border-bottom:3px solid red!important; } */
+
+    .is-active:before{
+        background-color:rgba(67, 165, 190,0.8)!important;
+        z-index:9999!important;
+        content : " ";
+        position: absolute;
+        left: 8%; 
+        bottom: 0;
+        height: 0;
+        width: 10%;  /* or 100px */
+        border-bottom:10px solid transparent;
+    }
+/* /////////////////////////////////////
+             MIN 576 px
+ /////////////////////////////////////*/
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 576px) { 
+    .is-active:before{
+        background-color:rgba(67, 165, 190,0.8)!important;
+        z-index:9999!important;
+        content : " ";
+        position: absolute;
+        left: 6%; 
+        bottom: 0;
+        height: 0;
+        width: 6%;  /* or 100px */
+        border-bottom:10px solid transparent;
+    }
+}
+/* /////////////////////////////////////
+             MIN 992 px
+ /////////////////////////////////////*/
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) { 
+    .is-active:before{
+        background-color:white!important;
+        z-index:9999!important;
+        content : "";
+        position: absolute;
+        left: 38px; 
+        bottom: 0;
+        height: 0;
+        width: 62px;  /* or 100px */
+        border-bottom:10px solid transparent;
+    }
+}
