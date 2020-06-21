@@ -1,28 +1,28 @@
 <div id="dev" class="py-4"></div>
-<div class="offset-0 col-12  white border border-white  text-left">
-    <div class="container">
-        <div class="row pt-5 mt-3">
-            <div class="col-12  col-sm-3    
-                        text-center
-                        pr-lg-4 
-                        white border border-white ">
-                <div class="contain">                      
-                   <div class="polyg">
-                       <img src="assets/img/polygone-titre1.jpg" class="img-fluid" alt="photo Symfony 4 SymBNB">
+    <div class="offset-0 col-12  white border border-white  text-left">
+        <div class="container">
+            <div class="row pt-5 mt-3">
+                <div class="col-12  col-sm-3    
+                            text-center
+                            pr-lg-4 
+                            white border border-white ">
+                    <div class="contain">                      
+                    <div class="polyg">
+                        <img src="assets/img/polygone-titre1.jpg" class="img-fluid" alt="photo Symfony 4 SymBNB">
+                        </div>
+                    <div class="centered"><i class="fas fa-code"></i></div>
                     </div>
-                   <div class="centered"><i class="fas fa-code"></i></div>
                 </div>
-             </div>
-             <div class="title-part-1 col-12 col-sm-9 col-md-9 col-lg-9          
-                         text-center text-sm-left
-                         mt-0 pt-4 pt-sm-0  pt-md-4 mt-sm-3 mt-md-2 mt-lg-2 mt-xl-1
-                         white border border-white">           
-                <div class="mt-sm-0 mt-md-1 mt-lg-0"><h1>Développement</h1></div>
-                <div class="trait mt-sm-0 mt-md-2 mt-lg-1 mt-xl-1 text-center "></div>
+                <div class="title-part-1 col-12 col-sm-9 col-md-9 col-lg-9          
+                            text-center text-sm-left
+                            mt-0 pt-4 pt-sm-0  pt-md-4 mt-sm-3 mt-md-2 mt-lg-2 mt-xl-1
+                            white border border-white">           
+                    <div class="mt-sm-0 mt-md-1 mt-lg-0"><h1>Développement</h1></div>
+                    <div class="trait mt-sm-0 mt-md-2 mt-lg-1 mt-xl-1 text-center "></div>
+                </div>
             </div>
         </div>
-     </div>
-</div>
+    </div>
 
 
 <div class="container-fluid px-sm-5">
@@ -35,23 +35,24 @@
                     <a href="{{developpement.modal}}" data-toggle="modal">
                         <img src="{{developpement.path}}" class="p-3 mb-5 img-fluid hoverable">
                     </a>                          
-                <p>{{developpement.content_over_title}}</p>
-                <h2 class="title-part-3">{{developpement.content_title}}</h2>
-                <p class="title-part-4">{{developpement.content_sub_title}}</p>
-                <div class='text-left pt-2  px-4 px-sm-2 px-md-1 px-lg-2 px-xl-2'>
-                    <strong>{{developpement.content}}</strong>
-                </div>   
-                <br>
-                <div class='text-left'>
-                    <button mdbBtn color="primary" class="waves-light" type="button" (mouseover)="test.show()" mdbWavesEffect>
-                        Lire Plus
-                    </button>
-                    
-                    <div mdbCollapse [isCollapsed]="true" #test="bs-collapse">
-                        <p>{{developpement.content_sub}} </p>           
-                        <small>{{developpement.content_sub_technos}}</small>
+                    <p>{{developpement.content_over_title}}</p>
+                    <h2 class="title-part-3">{{developpement.content_title}}</h2>
+                     <p class="title-part-4">{{developpement.content_sub_title}}</p>
+                    <div class='text-left pt-2  px-4 px-sm-2 px-md-1 px-lg-2 px-xl-2'>
+                        <strong>{{developpement.content}}</strong>
+                    </div>   
+                    <br>
+                    <div class='text-left'>
+                        <button mdbBtn color="primary" class="waves-light" type="button" (mouseover)="test.show()" mdbWavesEffect>
+                            Lire Plus
+                        </button>
+                        
+                        <div mdbCollapse [isCollapsed]="true" #test="bs-collapse">
+                            <p>{{developpement.content_sub}} </p>           
+                            <small>{{developpement.content_sub_technos}}</small>
+                        </div>
                     </div>
-                </div>
-            </div>  
-    </div><!--FIN ROW DEVELOPPEMENT-->
+                </div> 
+            </div><!--FIN ngFor-->   
+        </div><!--FIN ROW DEVELOPPEMENT-->
 </div><!--FIN Container DEVELOPPEMENT--> 

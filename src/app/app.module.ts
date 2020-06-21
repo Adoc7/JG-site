@@ -24,7 +24,7 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule }   from '@angular/forms';
 
 @NgModule({
@@ -48,12 +48,12 @@ import { FormsModule }   from '@angular/forms';
   imports: [
     BrowserModule,
     AppRootingModule,
-    NgxPageScrollCoreModule,
-    NgxPageScrollModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     HttpClientModule,
     FormsModule,
+    NgxPageScrollCoreModule,
+    NgxPageScrollModule,
     ROUTING
   ],
   providers: [

@@ -13,7 +13,7 @@ export class ModalService {
           new Modal (2, "myModal02","Affiche : Marche Nordique", "assets/img/graph_02.jpg", "Affiche : Marche Nordique", "", ""),
           new Modal (3, "myModal03","Affiche : Gym", "assets/img/graph_03.jpg", "Affiche : Gym", "", ""),
           new Modal (4, "myModal04","Affiche : Fête du Picodon", "assets/img/graph_04.jpg", "Affiche : Fête du Picodon", "", ""),
-          new Modal (5, "#myModalDess01","Portrait : Björk", "assets/img/dess_01.jpg", "Portrait : Björk", "", ""),
+          new Modal (5, "myModalDess01","Portrait : Björk", "assets/img/dess_01.jpg", "Portrait : Björk", "", ""),
           new Modal (6, "myModalDess02","Portrait : Serge Gainsbourg et Jane Birkin", "assets/img/dess_02.jpg", "Portrait : Serge Gainsbourg et Jane Birkin", "", ""),
           new Modal (7, "myModalDess03","Portrait : Sharleen Spiterri (Texas)", "assets/img/dess_03.jpg", "Portrait : Sharleen Spiterri (Texas)", "", ""),
           new Modal (8, "myModalDess04","Portrait : Portrait : Johnny Hallyday", "assets/img/dess_04.jpg", "Portrait : Johnny Hallyday", "", ""),

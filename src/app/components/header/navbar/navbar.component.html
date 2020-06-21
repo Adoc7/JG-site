@@ -17,18 +17,18 @@
     <div class="collapse navbar-collapse pr-lg-2 pr-xl-3" id="navbarSupportedContent">
         <ul class=" navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link"  [routerLink]="['apropos']" routerLinkActive="is-active"  fragment="about"><i class="fa fa-user-circle"></i> à propos</a>         
+                <a (click)="onClick('about')" class="nav-link"  [routerLink]="['apropos']" routerLinkActive="is-active"><i class="fa fa-user-circle"></i> à propos</a>         
             </li>
             <div class="nav-item dropdown">         
-                   <a class="nav-link dropdown-toggle" pageScroll href="#dev" [routerLink]="['portfolios']" fragment="dev"  routerLinkActive="is-active" fragment="dev" data-toggle="dropdown"><i class="fas fa-book-open"></i> portfolios</a>
+                   <a (click)="onClick('developpement')" class="nav-link dropdown-toggle"  [routerLink]="['portfolios']" routerLinkActive="is-active" data-toggle="dropdown"><i class="fas fa-book-open"></i> portfolios</a>
                    <div class="dropdown-menu">     
-                       <a class="dropdown-item" [routerLink]="['portfolios']" pageScroll href="#developpement" fragment="dev"><i class="fas fa-code"></i> développement</a>
+                       <a  class="dropdown-item" [routerLink]="['portfolios']" pageScroll href="#developpement" fragment="dev"><i class="fas fa-code"></i> développement</a>
                        <a class="dropdown-item" [routerLink]="['portfolios']" pageScroll href="#infographie" fragment="info"><i class="fab fa-adobe"></i> INFOGRAPHIE</a>
                        <a class="dropdown-item" [routerLink]="['portfolios']" pageScroll href="#dessins" fragment="draw"><i class="fas fa-pencil-alt"></i> DESSINS</a>       
                     </div>      
                 </div>
             <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" [routerLink]="['technologies']" routerLinkActive="is-active" pageScroll href="#graph" fragment="graph" data-toggle="dropdown" ><i class="fas fa-cog"></i> technologies</a>
+                        <a (click)="onClick('graph')" class="nav-link dropdown-toggle" [routerLink]="['technologies']" routerLinkActive="is-active" data-toggle="dropdown" ><i class="fas fa-cog"></i> technologies</a>
                        <div class="dropdown-menu" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
                         <a class="dropdown-item" [routerLink]="['technologies']" pageScroll href="#logiciels" fragment="logiciels"><i class="fab fa-adobe" ></i> graphisme</a>
                         <a class="dropdown-item" [routerLink]="['technologies']" pageScroll href="#devF" fragment="devF"><i class="fas fa-code"></i> dév front-end</a>
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <li class="nav-item">
-                <a class="nav-link" [routerLink]="['parcours']" routerLinkActive="is-active" pageScroll href="#course" fragment="course"><i class="fas fa-briefcase"></i> parcours</a>
+                <a (click)="onClick('course')" class="nav-link" [routerLink]="['parcours']" routerLinkActive="is-active"><i class="fas fa-briefcase"></i> parcours</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" pageScroll href="#contacts"><i class="fas fa-comments"></i> contacts</a>
