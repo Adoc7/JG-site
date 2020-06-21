@@ -93,50 +93,7 @@ if(!isMobile) {
   });
 }
 
-         $(document).ready(function(){
-
-      
-             /// Déplacement dans la page au clic
-
-            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
-               var page = $(this).attr('href'); // Page cible
-               var speed = 750; // Durée de l'animation (en ms)
-               var speed = 750; // Durée de l'animation (en ms)
-               $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-               return false;
-            });
-
-
-            // MODAL
-            $('.modal').each(function(){
-                var src = $(this).find('iframe').attr('src');
-                $(this).on('click', function(){
-                $(this).find('iframe').attr('src', '');
-                $(this).find('iframe').attr('src', src);
-                 });
-                });
-
-            /// Rendre visible au clic
-            // Lire plus
-            var temps_montre = 2000;   
-              afficher_div_vente_masque = function(){
-                $("#btve").hide()
-                  $("#vente").slideDown().show(temps_montre)
-                 
-               }
-               afficher_div_reserv_masque = function(){
-                $("#btre").hide()
-                  $("#reserv").slideDown().show(temps_montre)
-                
-               }
-               //toggle
-               var timer=3000;
-               
-          
-
-
-
-
+  $(document).ready(function(){
 /// Disparition du menu après clic
     $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggler:visible').click();
