@@ -16,7 +16,7 @@ export class ModalService {
           new Modal (5, "myModalDess01","Portrait : Björk", "assets/img/dess_01.jpg", "Portrait : Björk", "", ""),
           new Modal (6, "myModalDess02","Portrait : Serge Gainsbourg et Jane Birkin", "assets/img/dess_02.jpg", "Portrait : Serge Gainsbourg et Jane Birkin", "", ""),
           new Modal (7, "myModalDess03","Portrait : Sharleen Spiterri (Texas)", "assets/img/dess_03.jpg", "Portrait : Sharleen Spiterri (Texas)", "", ""),
-          new Modal (8, "myModalDess04","Portrait : Portrait : Johnny Hallyday", "assets/img/dess_04.jpg", "Portrait : Johnny Hallyday", "", ""),
+          new Modal (8, "myModalDess04","Portrait : Johnny Hallyday", "assets/img/dess_04.jpg", "Portrait : Johnny Hallyday", "", ""),
           new Modal (8, "myModalDess05","Portrait : Mylène Farmer", "assets/img/dess_05.jpg", "Portrait : Mylène Farmer", "", ""),
           new Modal (9, "myModalDess06","Portrait : Calvin Russel", "assets/img/dess_06.jpg", "Portrait : Calvin Russel", "", ""),
     ];
