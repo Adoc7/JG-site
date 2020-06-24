@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { HttpHeaders, HttpClient } from '@angular/common/http';
+
+ import { HttpHeaders, HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -9,12 +10,18 @@ import { HttpHeaders, HttpClient } from '@angular/common/http';
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent implements OnInit {
+  angForm: FormGroup;
 
-  constructor(private http: HttpClient) { }
-
+  constructor(
+    private http: HttpClient,
+    ) {}
+/*   submitForm = new FormGroup({
+    email: new FormControl('', Validators.required)
+  }) */
   ngOnInit(): void {
     
   }
+
   onSubmit(contactForm: NgForm) {
     if (contactForm.valid) {
       const email = contactForm.value;
@@ -26,6 +33,8 @@ export class ContactsComponent implements OnInit {
             console.log(response);
           }
         );
+    }else{
+      alert("Le formulaire n'est pas validé. Veuillez saisir correctement les champs obligatoires");
     }
   }
 

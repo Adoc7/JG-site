@@ -94,6 +94,7 @@ if(!isMobile) {
 }
 
   $(document).ready(function(){
+
 /// Disparition du menu après clic
     $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggler:visible').click();

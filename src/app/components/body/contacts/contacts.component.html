@@ -87,7 +87,7 @@
             <h2 class="title-part-5 mb-2">Me Contacter</h2>
                 <!-- Default form contact -->
                 
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="text-center border border-light p-5">
+            <form  (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="text-center border border-light p-5">
                 <p class="text-left pt-lg-3 mb-3"><span class="h5">*</span> Champs obligatoires</p>
                 <!-- Name -->
                 <div class="input-group mb-4">
@@ -97,12 +97,30 @@
                     <input type="text" id="defaultContactFormFirstName" class="form-control" placeholder="Prénom" name="firstname" ngModel #firstname="ngModel">
                 
                 </div>
+                
+
+
                 <div class="input-group  mb-4">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                     </div>
-                    <input type="text" id="defaultContactFormName" class="form-control" placeholder="Nom *" name="lastname" ngModel required #lastname="ngModel">
+                    <input type="text" id="defaultContactFormName" class="form-control" placeholder="Nom *" name="lastname" ngModel required minlength="4"  #lastname="ngModel">
                 </div>
+                <div *ngIf="lastname.valid" 
+                class="alert alert-success">
+                Le format du nom est correct                        
+                </div>
+               
+                <div *ngIf="lastname.invalid && (lastname.dirty || lastname.touched)"
+                     class="alert alert-danger">
+                     <div *ngIf="lastname.errors.required">
+                        Le nom est obligatoire
+                    </div>
+                    <div *ngIf="lastname.errors.minlength">
+                        Le nom doit comporter au moins 4 caractères
+                    </div>
+                </div>               
+                
 
                 <div class="input-group mb-4">
                     <div class="input-group-prepend">
@@ -116,8 +134,23 @@
                         <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                         </div>
-                        <input type="mail" id="defaultContactFormEmail" class="form-control" placeholder="Email *" email name="email" ngModel required #email="ngModel">
+                        <input type="mail" id="defaultContactFormEmail" class="form-control" placeholder="Email *"  email name="email" ngModel required  minlength="8" maxlength="30" #email="ngModel">
                     </div>
+                    <div *ngIf="email.valid" 
+                    class="alert alert-success">
+                    Le format du de l'email est correct                        
+                    </div>
+                   
+                    <div *ngIf="email.invalid && (email.dirty || email.touched)"
+                         class="alert alert-danger">
+                         <div *ngIf="email.errors.required">
+                            L'adresse email est obligatoire
+                        </div>
+                        <div *ngIf="email.errors.minlength">
+                            L'adresse email doit comporter au moins 8 caractères
+                        </div>
+                    </div>
+                   
                     <!-- Subject -->
     <!--                 <div class="input-group  mb-4">
                         <div class="input-group-prepend">
@@ -137,7 +170,20 @@
                         <div class="input-group-prepend ">
                         <span class="input-group-text pt-0" style="padding-bottom:70px;"><i class="fas fa-comment"></i></span>
                         </div>
-                        <textarea style=resize:none class="form-control rounded-0" id="exampleFormControlTextarea2" rows="4" placeholder="Message *" name="message" ngModel required #message="ngModel"></textarea>
+                        <textarea style=resize:none class="form-control rounded-0" id="exampleFormControlTextarea2" rows="4" placeholder="Message *" name="message" ngModel required minlength="10" maxlength="400"  #message="ngModel"></textarea>
+                    </div>
+                    <div *ngIf="message.invalid && (message.dirty || message.touched)"
+                         class="alert alert-danger">
+                        <div *ngIf="message.errors.required">
+                            Le message est requis pour envoyer un mail
+                        </div>
+                        <div *ngIf="message.errors.minlength">
+                            Le message doit comporter au moins de 10 caractères
+                        </div>
+                    </div>
+                    <div *ngIf="message.valid" 
+                        class="alert alert-success">
+                        Le format du message est correct                        
                     </div>
                 
                     <!-- Copy -->
