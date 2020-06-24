@@ -10,8 +10,6 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent implements OnInit {
-  angForm: FormGroup;
-
   constructor(
     private http: HttpClient,
     ) {}
