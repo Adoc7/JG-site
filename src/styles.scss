@@ -258,21 +258,22 @@ h6{
 /* MIN 576 PX */
 @media (min-width: 576px) {
  .logo-jg {
-   z-index:5000;
+   z-index:0;
    position:absolute;
    left:0;
    right:0;
    top:0;
-   height:100vw!important;
-   margin-top:-6%;
-   background: url('assets/img/cosmo_pyramids760.jpg') no-repeat top ;
+   height:100%!important;
+   margin-top:0;
+   background: url('assets/img/cosmo_pyramids768.jpg') no-repeat top ;
    background-size: cover;
  }
  #logo-jg {
-   top:60% !important;
-   padding-top:5% !important; 
-   width: 60%!important;
-   height: 60%!important;
+   top:30% !important;
+   margin-top:20% !important; 
+   padding-top:-20% !important; 
+   width: 30%!important;
+   height: 30%!important;
  }
   .display-3{
       font-size:4em!important;
@@ -286,10 +287,11 @@ h6{
       z-index:100 !important;
   }
   .phrase {  
-      margin-top:-2%;        
-      font-size: 9.5vw;
+      margin-top:4%;        
+      font-size: 6vw!important;
       font-weight: 100;
       letter-spacing: 0.2vw;
+      color:var(--main-color-02)!important;
   }
   .titre-principal {
     left: 0;
@@ -452,6 +454,7 @@ h6{
 }
 .phrase {    
     z-index:7000;  
+    margin-top:0; 
     padding-top:8vh;
     font-size: 10vw;
     font-weight: 100;
@@ -646,4 +649,5 @@ a.btn.btn-outline-primary{
       width:22%;
     }
   }
+
   
