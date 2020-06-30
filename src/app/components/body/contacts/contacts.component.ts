@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
+declare var $:any;
 
 @Component({
   selector: 'app-contacts',
@@ -14,7 +15,42 @@ export class ContactsComponent implements OnInit {
 /*   submitForm = new FormGroup({
     email: new FormControl('', Validators.required)
   }) */
-  ngOnInit(): void {   
+  ngOnInit(): any {   
+    $('.parentFN > *')
+    .focus(function() {
+        $('.parentFN ').addClass('focused');
+    })
+    .blur(function() {
+        $('.parentFN ').removeClass('focused');
+    });
+    $('.parentLN > *')
+    .focus(function() {
+        $('.parentLN ').addClass('focused');
+    })
+    .blur(function() {
+        $('.parentLN ').removeClass('focused');
+    });
+    $('.parentPN > *')
+    .focus(function() {
+        $('.parentPN ').addClass('focused');
+    })
+    .blur(function() {
+        $('.parentPN ').removeClass('focused');
+    });
+    $('.parentEM > *')
+    .focus(function() {
+        $('.parentEM ').addClass('focused');
+    })
+    .blur(function() {
+        $('.parentEM ').removeClass('focused');
+    });
+    $('.parentME > *')
+    .focus(function() {
+        $('.parentME ').addClass('focused');
+    })
+    .blur(function() {
+        $('.parentME ').removeClass('focused');
+    });
   }
 
   onSubmit(contactForm: NgForm) {
@@ -29,7 +65,7 @@ export class ContactsComponent implements OnInit {
           }
         );
     }else{
-      alert("Le formulaire n'est pas validé. Veuillez saisir correctement les champs obligatoires");
+      alert("Le formulaire n'est pas validé.\nVeuillez saisir correctement les champs obligatoires");
     }
   }
 

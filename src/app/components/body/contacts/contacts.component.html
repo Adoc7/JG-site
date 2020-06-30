@@ -91,7 +91,7 @@
                 <p class="text-left pt-lg-3 mb-3"><span class="h5">*</span> Champs obligatoires</p>
                 <!-- Name -->
                 <div class="mb-4">
-                <div class="input-group">
+                <div class="parentFN  input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                     </div>
@@ -101,11 +101,12 @@
                 
 
                 <div class="mb-4">
-                <div class="input-group">
+                <div class="parentLN input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                     </div>
                     <input type="text" id="defaultContactFormName" class="form-control" placeholder="Nom *" name="lastname" ngModel required minlength="4" maxlength="15" #lastname="ngModel">
+                    
                 </div>              
                 
                     <div *ngIf="lastname.valid" 
@@ -126,7 +127,7 @@
                   
                 
                 <div class="mb-4">
-                    <div class="input-group">
+                    <div class="parentPN input-group">
                         <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-phone flip_H"></i></span>
                         </div>
@@ -138,7 +139,7 @@
 
                     <!-- Email -->
                     <div class="mb-4">
-                    <div class="input-group">
+                    <div class="parentEM input-group">
                         <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                         </div>
@@ -180,12 +181,12 @@
 
                     <!-- Message -->
                     <div class="mb-4">
-                    <div class="input-group">
+                    <div class="parentME input-group">
                         <div class="input-group-prepend ">
                         <span class="input-group-text pt-0" style="padding-bottom:70px;"><i class="fas fa-comment"></i></span>
                         </div>
                         <textarea style=resize:none class="form-control rounded-0" id="exampleFormControlTextarea2" rows="4" placeholder="Message *" name="message" ngModel required minlength="10" maxlength="400"  #message="ngModel"></textarea>
-                    
+                    </div>
                     <div *ngIf="message.invalid && (message.dirty || message.touched)"
                          class="alert alert-danger">
                         <div *ngIf="message.errors.required">
@@ -199,7 +200,7 @@
                         class="alert alert-success">
                         Le format du message est correct                        
                     </div>
-                </div>
+               
                     </div>
                 
                     <!-- Copy -->
