@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-
- import { HttpHeaders, HttpClient } from '@angular/common/http';
-
+import { HttpHeaders, HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contacts',
@@ -16,8 +14,7 @@ export class ContactsComponent implements OnInit {
 /*   submitForm = new FormGroup({
     email: new FormControl('', Validators.required)
   }) */
-  ngOnInit(): void {
-    
+  ngOnInit(): void {   
   }
 
   onSubmit(contactForm: NgForm) {

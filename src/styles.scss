@@ -164,7 +164,7 @@ html, body, header, .view {height: 100%;}
     font-size: 12.5vw;
     font-weight: 100;
     letter-spacing: 0.5vw;
-    color: var(--main-color-01);
+    color: var(--main-color-02);
 }
 .logo-jg {
     z-index:4000;
@@ -179,9 +179,9 @@ html, body, header, .view {height: 100%;}
 }
 #logo-jg {
   z-index:6000;
-   margin-top:40%;
-  width: 50%!important;
-  height: 50%!important;
+   margin-top:30%;
+  width: 45%!important;
+  height: 45%!important;
 }
 /* .fa-angle-down{
     color:white;
@@ -270,10 +270,9 @@ h6{
  }
  #logo-jg {
    top:30% !important;
-   margin-top:20% !important; 
-   padding-top:-20% !important; 
-   width: 30%!important;
-   height: 30%!important;
+   margin-top:25% !important; 
+   width: 50%!important;
+   height: 50%!important;
  }
   .display-3{
       font-size:4em!important;
@@ -288,7 +287,7 @@ h6{
   }
   .phrase {  
       margin-top:4%;        
-      font-size: 6vw!important;
+      font-size: 8vw!important;
       font-weight: 100;
       letter-spacing: 0.2vw;
       color:var(--main-color-02)!important;
@@ -353,11 +352,12 @@ h6{
       left:0;
       right:0;
       height:auto;
+      background: url('assets/img/cosmo_pyramids992.jpg') no-repeat top ;
       background-size: cover;
   }
    #logo-jg {
      z-index:6000!important;
-     margin-top:30%;
+     margin-top:25%!important;
      width: 45%!important;
      height: 45%!important;
    }
@@ -370,11 +370,11 @@ h6{
     opacity:0.4;
  }
 .phrase {   
-   padding-top:13vh;
+   padding-top:8vh;
    left: 0;
    right:0;      
    color: var(--main-color-01);
-   font-size:12vw;
+   font-size:10vw!important;
    font-weight: 100;
    letter-spacing: 0.3vw;
 }
@@ -442,21 +442,21 @@ h6{
     padding-top:2%;
     left:0;
     right:0;
-    height:auto!important;
+    height:100vh!important;
    
      background: url('assets/img/cosmo_pyramids1200.jpg') no-repeat top;
     background-size: cover;
 }
 #logo-jg {
-    margin-top:28vh!important; 
-  width: 45%!important;
-  height: 45%!important;
+  margin-top:25vh!important; 
+  width: 40%!important;
+  height: 40%!important;
 }
 .phrase {    
     z-index:7000;  
     margin-top:0; 
-    padding-top:8vh;
-    font-size: 10vw;
+    padding-top:10vh;
+    font-size: 11vw!important;
     font-weight: 100;
     letter-spacing: 0.2vw;
 }
@@ -538,9 +538,9 @@ h6{
     }
   .phrase {   
     z-index:7000;
-     padding-top:15vh; 
+     padding-top:10vh; 
      color: var(--main-color-01);
-     font-size:7vw;
+     font-size:8vw!important;
      width:100%;
      font-weight: 100;
      letter-spacing: 0;
