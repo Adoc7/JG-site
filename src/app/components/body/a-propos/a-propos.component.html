@@ -1,66 +1,75 @@
 
-<section id="about" >
+<section id="about" class="mb-5 pb-5">
   
-    <div class="py-1"></div>
+    <div class="col-12  d-none d-xl-block py-5 mx-0 px-0 h-25 ">
+        <div id="parallax-container calage"> 
+             <div class="parallax-wrapper">
+                 <div class="parallax-layer background-picture" id="opacite"></div>        
+            </div>             
+        </div>
+    </div>
   
-        <div class="container mt-5 pt-5" id="top_apropos" >
+        <div class="container mt-5 pt-5 mt-xl-0 pt-xl-0" id="top_apropos" >
              <div class="jumbotron" id="apropos"
              data-aos="fade"
              data-aos-offset="300"
              data-aos-easing="ease-in-sine"              
              >
-                 <div class="col-12 mb-2">
+                 <div class="col-12">
                      <h1>Bienvenue sur mon site web</h1>  
                  </div>
-                    <div class="row" >
+                    <div class="row px-4" >
                         <div class="col-md-6"> 
-                            <p class="h4 mt-5"><strong>La Maîtrise du Temps</strong></p>         
-                            <ul class="lead">
-                                <li>En utilisant une technologie réactive</li>
-                                <li>Pour parcourir l'espace du site Internet sans latence</li>
+                            <p class="h4 mt-3"><strong>La Maîtrise du Temps</strong></p>         
+                            <ul>
+                                <li>En utilisant une <strong>technologie réactive</strong></li>
+                                <li>En parcourant l'espace <strong>sans latence</strong></li>
                             </ul>
                         </div>
   
                     <div class="col-md-6">
-                        <p class="h4 mt-5"><strong>La Conquête de l'Espace</strong></p>   
-                    <ul class="lead">           
-                        <li>C'est du Responsive Web Design</li>
-                        <li>C'est de la communication interactive à 360°</li>
+                        <p class="h4 mt-3"><strong>La Conquête de l'Espace</strong></p>   
+                    <ul>           
+                        <li>C'est du <strong>Responsive Web Design</strong></li>
+                        <li>C'est de la <strong>communication interactive à 360°</strong></li>
                     </ul>
                     </div>
             </div>
-                <hr class="my-4">
-                <div class="row">
-                    <div class="col-12 ">
-                      <p class="h4 mb-4"><strong>&Agrave; 360 degrès ?</strong></p>
+               
+                <div class="row px-4">
+                    <div class="col-12">
+                      <p class="h4 mb-2"><strong>&Agrave; 360 degrès ?</strong></p>
                     </div>
                     <div class="col-md-6">
-                    <p>     
-                        Afin de pouvoir vous apporter une qualité de service !
-                        <br> <br>Maîtrisant le <strong>graphisme</strong> ; <br>
-                        je suis de plus polyvalent en tant que <br>
-                        <strong>Développeur Web</strong> et <strong>Mobile</strong>.
+                      
+                        <ul>
+                            <li>Afin de vous apporter une <strong>qualité de service !</strong></li>
+                            <li>Maîtrisant le <strong>graphisme</strong> ; <br>
+                                je suis de plus polyvalent en tant que <br>
+                                <strong>Développeur Web</strong> et <strong>Mobile</strong>.</li>
+                        </ul> 
+                        
+                     
                     </div>
                     <div class="col-md-6">         
                         <p>
-                            Ayant créé et réalisé ce site Web Responsif avec ces <strong>technologies</strong> :<br>
+                            <strong><u>Ayant créé et réalisé ce site Web Responsif avec :</u></strong>
                         </p>
                         
                         <ul>
                             <li>Les frameworks <strong>Angular 9</strong> et <strong>Bootstrap 4</strong>  <br></li>
-                            <li>Les langages <strong>TypeScript</strong> et <strong>jQuery</strong></li>
-                            <li><strong>CSS 3</strong> et <strong>HTML 5</strong></li>
-                            <li>Etc., vous trouverez une liste exhaustive des technologies que je pratique</li>
+                            <li>Les langages <strong>TypeScript</strong> et <strong>jQuery</strong></li>   
+                            <li>Vous souhaitez en savoir davantage ? <br>
+                            <button class="btn btn-lg" (click)="goToTechno()"
+                                ><i class="fas fa-cog"></i> Technologies
+                            </button></li>                          
                         </ul>
-                      
-                    <p class="lead">
-                        <button class="btn btn-lg" (click)="goToTechno()"
-                             ><i class="fas fa-cog"></i> Technologies
-                        </button>       
-                    </p>
+                       
                   </div>
               </div>
-            </div>
+            </div>        
+            
         </div>
+  
     </section>
     <app-contacts></app-contacts>

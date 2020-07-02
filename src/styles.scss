@@ -164,7 +164,7 @@ html, body, header, .view {height: 100%;}
     font-size: 12.5vw;
     font-weight: 100;
     letter-spacing: 0.5vw;
-    color: var(--main-color-02);
+    color: var(--main-color-01);
 }
 .logo-jg {
     z-index:4000;
@@ -460,6 +460,7 @@ h6{
     font-weight: 100;
     letter-spacing: 0.2vw;
 }
+
 .titre-principal {   
     margin-top:-6vh; 
 }
@@ -492,7 +493,6 @@ h6{
      margin-top:0.1em!important;   
      font-size: 5em !important;
      font-weight:900 !important;
-     letter-spacing: -0.03em !important;      
   }
  .trait{
     background-color: var(--main-color);
