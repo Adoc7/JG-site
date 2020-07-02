@@ -1,4 +1,4 @@
-export class PortfolioDev {
+export interface PortfolioDev {
     id: number;
     over_title:string;
     title:string;
@@ -12,7 +12,7 @@ export class PortfolioDev {
     content_sub:string;
     content_sub_technos:string;
     
-    constructor(
+/*     constructor(
         id= 0,
         over_title = '',
         title = '',
@@ -38,5 +38,5 @@ export class PortfolioDev {
             this.content = content;
             this.content_sub = content_sub;
             this.content_sub_technos = content_sub_technos;
-    }
+    } */
 }

@@ -14,7 +14,7 @@ declare var $:any;
 export class DeveloppementComponent implements OnInit {
   @ViewChildren(CollapseComponent) collapses: CollapseComponent[];
  
-  portfolioDev: PortfolioDev [];
+  portfolioDev: PortfolioDev[];
 
   constructor(
     private portfolioDevService: PortfolioDevService
@@ -29,12 +29,13 @@ export class DeveloppementComponent implements OnInit {
   }
     
   ngOnInit(): any { 
-    AOS.init();
+    
 /*     $(".suite").hover(function() {
       $("." + $(this).data('target')).show();
       $(this).hide();
     }); */
     this.portfolioDev = this.portfolioDevService.getPortfolioDev();
+    AOS.init();
     
 /*     $('.modal').each(function(){
       var src = $(this).find('iframe').attr('src');
@@ -44,7 +45,4 @@ export class DeveloppementComponent implements OnInit {
        });
       }); */
   }
-
-  
-  
 }
