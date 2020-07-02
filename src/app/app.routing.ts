@@ -6,6 +6,7 @@ import { AProposComponent } from './components/body/a-propos/a-propos.component'
 import { PortfoliosComponent } from './components/body/portfolios/portfolios.component';
 import { ErrorComponent } from './components/error/error.component';
 
+
 const APP_ROUTING: Routes =[
  
  {path: '', component: AccueilComponent},

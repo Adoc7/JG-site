@@ -17,28 +17,28 @@
     <div class="collapse navbar-collapse pr-lg-2 pr-xl-3" id="navbarSupportedContent">
         <ul class=" navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link"  [routerLink]="['apropos']" pageScroll href="#about"  fragment="about"  routerLinkActive="is-active"><i class="fa fa-user-circle"></i> à propos</a>         
+                <a class="nav-link"  [routerLink]="['apropos']" pageScroll href="#about"  fragment="#about"  routerLinkActive="is-active"><i class="fa fa-user-circle"></i> à propos</a>         
             </li>
             <div class="nav-item dropdown">         
-                   <a class="nav-link dropdown-toggle"  [routerLink]="['portfolios']" pageScroll href="#portfolios"  fragment="portfolios" routerLinkActive="is-active" data-toggle="dropdown"><i class="fas fa-book-open"></i> portfolios</a>
+                   <a class="nav-link dropdown-toggle"  [routerLink]="['portfolios']" pageScroll href="#portfolios"  fragment="#portfolios" routerLinkActive="is-active" data-toggle="dropdown"><i class="fas fa-book-open"></i> portfolios</a>
                    <div class="dropdown-menu">     
-                       <a  class="dropdown-item" [routerLink]="['portfolios']" pageScroll href="#developpement" fragment="dev"><i class="fas fa-code"></i> développement</a>
-                       <a class="dropdown-item" [routerLink]="['portfolios']" pageScroll href="#infographie" fragment="info"><i class="fab fa-adobe"></i> INFOGRAPHIE</a>
-                       <a class="dropdown-item" [routerLink]="['portfolios']" pageScroll href="#dessins" fragment="draw"><i class="fas fa-pencil-alt"></i> DESSINS</a>       
+                       <a  class="dropdown-item" [routerLink]="['portfolios']" pageScroll href="#developpement" fragment="#dev"><i class="fas fa-code"></i> développement</a>
+                       <a class="dropdown-item" [routerLink]="['portfolios']" pageScroll href="#infographie" fragment="#info"><i class="fab fa-adobe"></i> INFOGRAPHIE</a>
+                       <a class="dropdown-item" [routerLink]="['portfolios']" pageScroll href="#dessins" fragment="#draw"><i class="fas fa-pencil-alt"></i> DESSINS</a>       
                     </div>      
                 </div>
             <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" [routerLink]="['technologies']" pageScroll href="#graph"  fragment="graph"  routerLinkActive="is-active" data-toggle="dropdown" ><i class="fas fa-cog"></i> technologies</a>
+                        <a class="nav-link dropdown-toggle" [routerLink]="['technologies']" pageScroll href="#graph"  fragment="#graph"  routerLinkActive="is-active" data-toggle="dropdown" ><i class="fas fa-cog"></i> technologies</a>
                        <div class="dropdown-menu" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
-                        <a class="dropdown-item" [routerLink]="['technologies']" pageScroll href="#logiciels" fragment="logiciels"><i class="fab fa-adobe" ></i> graphisme</a>
+                        <a class="dropdown-item" [routerLink]="['technologies']" pageScroll href="#logiciels" fragment="#logiciels"><i class="fab fa-adobe" ></i> graphisme</a>
 
-                        <a class="d-lg-none dropdown-item" [routerLink]="['technologies']" pageScroll href="#devF" fragment="devF"><i class="fas fa-code"></i> dév front-end</a>
-                        <a class="d-lg-none dropdown-item" [routerLink]="['technologies']" pageScroll href="#devB" fragment="devB"><i class="fab fa-symfony" ></i> dév back-end</a>
-                        <a class="d-none d-lg-block dropdown-item" [routerLink]="['technologies']" pageScroll href="#devF" fragment="devF"><i class="fas fa-code"></i> développement</a>
+                        <a class="d-lg-none dropdown-item" [routerLink]="['technologies']" pageScroll href="#devF" fragment="#devF"><i class="fas fa-code"></i> dév front-end</a>
+                        <a class="d-lg-none dropdown-item" [routerLink]="['technologies']" pageScroll href="#devB" fragment="#devB"><i class="fab fa-symfony" ></i> dév back-end</a>
+                        <a class="d-none d-lg-block dropdown-item" [routerLink]="['technologies']" pageScroll href="#devF" fragment="#devF"><i class="fas fa-code"></i> développement</a>
                     </div>
                 </div>
                 <li class="nav-item">
-                <a class="nav-link" [routerLink]="['parcours']" pageScroll href="#course"  fragment="course"  routerLinkActive="is-active"><i class="fas fa-briefcase"></i> parcours</a>
+                <a class="nav-link" [routerLink]="['parcours']" pageScroll href="#course"  fragment="#course"  routerLinkActive="is-active"><i class="fas fa-briefcase"></i> parcours</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" pageScroll href="#contacts"><i class="fas fa-comments"></i> contacts</a>

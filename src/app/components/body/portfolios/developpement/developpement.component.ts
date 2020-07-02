@@ -14,7 +14,7 @@ declare var $:any;
 export class DeveloppementComponent implements OnInit {
   @ViewChildren(CollapseComponent) collapses: CollapseComponent[];
  
-  portfolioDev: PortfolioDev[];
+  portfolioDev: PortfolioDev [];
 
   constructor(
     private portfolioDevService: PortfolioDevService
@@ -29,7 +29,7 @@ export class DeveloppementComponent implements OnInit {
   }
     
   ngOnInit(): any { 
-    
+   
 /*     $(".suite").hover(function() {
       $("." + $(this).data('target')).show();
       $(this).hide();

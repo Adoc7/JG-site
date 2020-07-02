@@ -12,8 +12,8 @@ export class NavbarComponent implements OnInit {
    private route: Router,
    private viewportScroller: ViewportScroller
   ) { }
-  ngOnInit(): any {   
-    
+  ngOnInit(): void { 
+      
   }
   public onClick(elementId: string): void { 
     this.viewportScroller.scrollToAnchor(elementId);
