@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import * as AOS from 'aos';
-
 
 
 @Component({
@@ -14,12 +12,9 @@ export class AProposComponent implements OnInit {
 
     private route: Router,
   ) { }
-  ngOnInit(): any {
-    AOS.init();
+  ngOnInit(): void {
   }
     goToTechno(){
       this.route.navigate(['technologies'], { fragment: 'graph'});
     } 
   }
-
-  

@@ -4,11 +4,11 @@ import { HttpHeaders, HttpClient } from '@angular/common/http';
 declare var $:any;
 
 @Component({
-  selector: 'app-contacts',
-  templateUrl: './contacts.component.html',
-  styleUrls: ['./contacts.component.scss']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.scss']
 })
-export class ContactsComponent implements OnInit {
+export class ContactComponent implements OnInit {
   constructor(
     private http: HttpClient,
     ) {}

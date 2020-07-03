@@ -7,6 +7,8 @@ declare var $:any;
   templateUrl: './parcours.component.html',
   styleUrls: ['./parcours.component.scss']
 })
+
+
 export class ParcoursComponent implements OnInit {
 
   constructor() { }
@@ -17,5 +19,4 @@ export class ParcoursComponent implements OnInit {
     $("." + $(this).data('target')).slideToggle(timer);
      });
     }        
-
 }
