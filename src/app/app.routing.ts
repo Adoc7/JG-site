@@ -2,6 +2,7 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router'
 import { AccueilComponent } from './components/header/accueil/accueil.component'
 import { PortfoliosComponent } from './components/body/portfolios/portfolios.component';
 import { ErrorComponent } from './components/error/error.component';
+import { CustomPreloadingService } from './services/custom-preloading.service';
 
 const APP_ROUTING: Routes =[
  
@@ -12,14 +13,14 @@ const APP_ROUTING: Routes =[
     .then(mod => mod.AProposModule)
   },
   
-{path: 'portfolios', component: PortfoliosComponent},
+{path: 'portfolios',  component: PortfoliosComponent},
 
- {path: 'technologies',
+ {path: 'technologies', data: {preload:true},
 loadChildren: () => import("./modules/body/technologies/technologies.module") 
 .then(mod => mod.TechnologiesModule)
 },
 
- {path: 'parcours', 
+ {path: 'parcours',
  loadChildren: () => import("./modules/body/parcours/parcours.module")
   .then(mod => mod.ParcoursModule)
  },
@@ -28,4 +29,4 @@ loadChildren: () => import("./modules/body/technologies/technologies.module")
 ];
 
 
-export const ROUTING = RouterModule.forRoot(APP_ROUTING, { preloadingStrategy: PreloadAllModules, anchorScrolling: 'enabled'});
+export const ROUTING = RouterModule.forRoot(APP_ROUTING, { preloadingStrategy: CustomPreloadingService, anchorScrolling: 'enabled'});

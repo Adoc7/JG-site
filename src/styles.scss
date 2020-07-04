@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+ */
+/* 100,100i, 900,900i */
 :root{
     --main-color:#43A5BE;
     --main-color-01:white;
@@ -115,8 +117,8 @@ html, body, header, .view {height: 100%;}
   }
   .parallax{
     position:relative;
-    background:url("https://media.giphy.com/media/7GHRDluBmx9O8/giphy.gif") no-repeat center center fixed;
-    background:url("http://media.giphy.com/media/Cf4qsIEIrFs6Q/giphy.gif") no-repeat center center fixed;
+/*     background:url("https://media.giphy.com/media/7GHRDluBmx9O8/giphy.gif") no-repeat center center fixed;*/
+     background:url("http://media.giphy.com/media/Cf4qsIEIrFs6Q/giphy.gif") no-repeat center center fixed;
      background-attachment: scroll !important;
      -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -211,8 +213,8 @@ html, body, header, .view {height: 100%;}
 } */
 h1{
     margin-top:0.1em!important;
-    font-weight:900!important;
-    font-size: 1.8em !important;
+    font-weight:600!important;
+    font-size: 2.6em !important;
     letter-spacing: -0.03em !important;  
 }
 
@@ -242,7 +244,7 @@ h6{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size:6em;
-    font-weight:800;
+    font-weight:600;
     color:black
   }
 #code{
@@ -324,7 +326,7 @@ h6{
    margin-left:-0.35em!important;
    margin-bottom:0!important;
    font-size: 3em !important;
-   font-weight:900 !important;
+   font-weight:600 !important;
    letter-spacing: -0.03em !important;      
  }
  .centered {
@@ -333,7 +335,7 @@ h6{
      left: 50%;
      transform: translate(-50%, -50%);
      font-size:4em;
-     font-weight:800;
+     font-weight:600;
      color:var(--main-color-02);
    } 
   }
@@ -386,7 +388,7 @@ h6{
       margin-top:0.1em!important;
       margin-bottom:-0.1em!important;
       font-size: 3.6em !important;
-      font-weight:900 !important;
+      font-weight:600 !important;
       letter-spacing: -0.03em !important;      
   }
   .trait{   
@@ -401,7 +403,7 @@ h6{
       left: 50%;
       transform: translate(-50%, -50%);
       font-size:6em;
-      font-weight:800;
+      font-weight:600;
       color:black
     }
     .title-part-1{
@@ -492,7 +494,7 @@ h6{
  h1{
      margin-top:0.1em!important;   
      font-size: 5em !important;
-     font-weight:900 !important;
+     font-weight:600 !important;
   }
  .trait{
     background-color: var(--main-color);
@@ -551,7 +553,7 @@ h6{
    h1{
      margin-top:0.1em!important;   
      font-size: 5.4em !important;
-     font-weight:900 !important;
+     font-weight:600 !important;
      letter-spacing: -0.02em !important;      
   }
   .trait{
@@ -572,9 +574,6 @@ h6{
 
 /* // FIN DES MEDIASQUERIES */
 
-
-
-
 .contain {
     position: relative;
     text-align: center;
@@ -586,13 +585,13 @@ h6{
  .title-part-2{
      margin-top:-20px;
      font-size:2.2em;
-     font-weight:800;
+     font-weight:600;
      text-transform: uppercase;
  }
  .title-part-3{
     margin-top:-22px;
     font-size:1.6em;
-    font-weight:800;
+    font-weight:600;
     text-transform: uppercase;
 }
 .title-part-4{
@@ -625,7 +624,6 @@ a.btn.btn-outline-primary{
 .layer{
     width:100%!important;
 }
-
   a.dropdown-item:active{
       background-color:rgba(67, 165, 190,0.2)!important;
   }
@@ -635,8 +633,6 @@ a.btn.btn-outline-primary{
   .waves-light:active{
     background-color:var(--main-color)!important;
   }
-
-
   #logo-jg {
     opacity:0.9;
   }
@@ -649,5 +645,3 @@ a.btn.btn-outline-primary{
       width:22%;
     }
   }
-
-  

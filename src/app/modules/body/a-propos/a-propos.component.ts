@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-/* import * as AOS from 'aos';
- */
+/* import * as AOS from 'aos';*/
 import { Router } from '@angular/router';
 
 
