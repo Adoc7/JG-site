@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as AOS from 'aos';
-import { PortfolioDev } from 'src/app/Model/PortfolioDev';
+/* import * as AOS from 'aos';
+ */import { PortfolioDev } from 'src/app/Model/PortfolioDev';
 import { PortfolioDevService } from 'src/app/services/portfolio-dev.service';
 
 declare var $:any;
@@ -16,8 +16,8 @@ export class PortfoliosComponent implements OnInit {
     private portfolioDevService: PortfolioDevService
   ) {}
   ngOnInit(): any { 
-    AOS.init();
-/*     $(".suite").hover(function() {
+/*     AOS.init();
+ *//*     $(".suite").hover(function() {
       $("." + $(this).data('target')).show();
       $(this).hide();
     }); */

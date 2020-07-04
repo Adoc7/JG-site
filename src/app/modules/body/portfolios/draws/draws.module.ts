@@ -9,10 +9,3 @@ import { DrawsComponent } from './draws.component';
   exports: [DrawsComponent],
 })
 export class DrawsModule { }
-
-
-
-
-
-
-

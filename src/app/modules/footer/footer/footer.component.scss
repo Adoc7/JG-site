@@ -1,0 +1,28 @@
+*{
+    background-color: black;
+}
+
+#content{
+  color:#43A5BE;  
+}
+a{
+    color:grey;
+}
+
+#content:after{
+  content:"Mobile Very Small Screen"
+ }
+ @media (min-width: 760px) {
+  #content:after{
+    content:"Mobile Small Screen"  }
+}
+ @media (min-width: 992px) {
+  #content:after{
+   content:"Desktop Large Screen"
+  }
+}
+ @media (min-width: 1200px) {   
+  #content:after{
+    content:"Desktop Very Large Screen"
+ }
+}

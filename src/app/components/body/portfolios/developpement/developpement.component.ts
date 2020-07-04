@@ -1,6 +1,6 @@
 import { CollapseComponent } from 'angular-bootstrap-md';
 import { Component, OnInit , AfterViewInit, ViewChildren } from '@angular/core';
-import * as AOS from 'aos';
+/* import * as AOS from 'aos'; */
 import { PortfolioDev } from 'src/app/Model/PortfolioDev';
 import { PortfolioDevService } from 'src/app/services/portfolio-dev.service';
 
@@ -29,20 +29,7 @@ export class DeveloppementComponent implements OnInit {
   }
     
   ngOnInit(): any { 
-   
-/*     $(".suite").hover(function() {
-      $("." + $(this).data('target')).show();
-      $(this).hide();
-    }); */
-    this.portfolioDev = this.portfolioDevService.getPortfolioDev();
-    AOS.init();
-    
-/*     $('.modal').each(function(){
-      var src = $(this).find('iframe').attr('src');
-      $(this).on('click', function(){
-      $(this).find('iframe').attr('src', '');
-      $(this).find('iframe').attr('src', src);
-       });
-      }); */
+/*     AOS.init();*/    
+this.portfolioDev = this.portfolioDevService.getPortfolioDev();
   }
 }

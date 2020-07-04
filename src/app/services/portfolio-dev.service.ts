@@ -13,8 +13,8 @@ export class PortfolioDevService {
       {id:3, over_title:"CODAGE BACK-END", title:"SYMFONY 4", modal:"#ModalSymAgence", lire_plus:"vente", path:"assets/img/screen-symAgence.jpg", content_over_title:"PROJET DE", content_title:"VENTE", content_sub_title:"IMMOBILIERE", content:"Ce projet de vente immobilière permet de mettre en relation des propriétaires souhaitant vendre leurs biens et des acquéreurs", content_sub:"Les propriétaires qui s'inscrivent peuvent déposer leur annonce. Et les personnes ayant besoin d'acheter un logement ont la possibilités de de le faire grâce à des filtres qui facilitent leur recherche.", content_sub_technos:"Technologies : Symfony, Doctrine, Twig, Php, PhpMyAdmin."},
       {id:4, over_title:"CODAGE FRONT-END", title:"ANGULAR 6", modal:"#ModalAngResto", lire_plus:"reserv", path:"assets/img/screen-angResto.jpg", content_over_title:"PROJET DE", content_title:"RÉSERVATION", content_sub_title:"AU RESTAURANT", content:"La Tablée du Développeur est un projet qui a de quoi assouvir l'appétit ou les appétences de codage.", content_sub:"Cette application mobile permet de réserver une table avec une réactivité en temps réel.", content_sub_technos:"Technologies : Angular, Material Design."}
     ]
-
    getPortfolioDev(): PortfolioDev [] {
      return this.developpement;
    }
 }
+

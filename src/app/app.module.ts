@@ -3,11 +3,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AccueilComponent } from './components/header/accueil/accueil.component';
 import { NavbarComponent } from './components/header/navbar/navbar.component';
-import { FooterComponent } from './components/footer/footer/footer.component';
 import { AppRootingModule } from './app-rooting.module';
 import { ROUTING } from './app.routing';
 import { PortfoliosComponent } from './components/body/portfolios/portfolios.component';
-import { ErrorComponent } from './components/error/error.component';
 import { DataService } from './data.service';
 import { TechnologieService } from './services/technologie.service';
 import { PortfolioDevService } from './services/portfolio-dev.service';
@@ -24,16 +22,17 @@ import { ContactModule } from './modules/body/contact/contact.module';
 import { DrawsModule } from './modules/body/portfolios/draws/draws.module';
 import { InfographieModule } from './modules/body/portfolios/infographie/infographie.module';
 import { ModalModule } from './modules/body/portfolios/modal/modal.module';
+import { ErrorComponent } from './components/error/error.component';
+import { FooterModule } from './modules/footer/footer/footer.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     AccueilComponent,
     NavbarComponent,
-    FooterComponent,
-    PortfoliosComponent,
-    ErrorComponent,
+    PortfoliosComponent, 
     DeveloppementComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +48,8 @@ import { ModalModule } from './modules/body/portfolios/modal/modal.module';
     ContactModule,
     DrawsModule,
     InfographieModule,
-    ModalModule
+    ModalModule,
+    FooterModule,
   ],
   providers: [
     DataService,
