@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import * as AOS from 'aos';
 
 declare var $ :any;
 
@@ -16,7 +15,7 @@ export class AccueilComponent implements OnInit {
   ) { }
 
   ngOnInit(): any {
-    AOS.init();
+   
     $('.phrase').arctext({ radius: 800 });
     var position = $(window).scrollTop(); 
 $(window).scroll(function() {

@@ -30,7 +30,7 @@
             <h2 class="display-3">Quelques travaux graphiques</h2>
         </div>
     <div *ngFor="let infographie of infographies" class="col-12 col-sm-6 col-md-6 col-xl-3 mb-4"> 
-        <div class="view overlay zoom hoverable">  
+        <div class="view overlay zoom hoverable" data-aos="zoom-out" data-aos-duration="500">  
 
             <img src="{{infographie.path}}"  class="w-100 h-100">        
             <a  href="{{infographie.modal}}"  data-toggle="modal"  class="mask flex-center rgba-black-light">                                                

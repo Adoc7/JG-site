@@ -30,7 +30,7 @@
             <h2 class="title-part-2 pb-1">crayons graphites</h2> 
         </div>
         <div *ngFor="let graph of graph_draws" class="col-12 col-sm-6 col-md-4  mb-4 "> 
-            <div class="view overlay zoom hoverable">            
+            <div class="view overlay zoom hoverable" data-aos="zoom-out" data-aos-duration="500">            
                 <img src="{{graph.path}}" alt={{graph.name}}  class="w-100 h-100">        
                 <a  href="{{graph.modal}}"  data-toggle="modal"  class="mask flex-center rgba-black-light">                                                
                     <p class="white-text"><i class="fas fa-search fa-3x"></i></p>       
@@ -43,7 +43,7 @@
             <h2 class="title-part-2 pb-1">techniques pastels et mixtes</h2> 
         </div>
         <div *ngFor="let pastel of pastel_draws" class="col-12 col-sm-6 col-md-4 mb-4"> 
-            <div class="view overlay zoom hoverable">            
+            <div class="view overlay zoom hoverable" data-aos="zoom-out" data-aos-duration="500">            
                 <img src="{{pastel.path}}" alt="{{pastel.name}}"  class="w-100 h-100 ">
                
                 <a href="{{pastel.modal}}"  data-toggle="modal"  class="mask flex-center rgba-black-light">                                                
