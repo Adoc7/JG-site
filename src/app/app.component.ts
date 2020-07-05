@@ -10,6 +10,8 @@ import 'aos/dist/aos.css';
 export class AppComponent implements OnInit {
   title = 'jg-app';
   ngOnInit(): any {
-    AOS.init();
+    AOS.init({
+      startEvent: 'DOMContentLoaded',
+    });
   }
 }
