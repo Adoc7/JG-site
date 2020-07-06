@@ -1,3 +1,5 @@
+
+
 /**
  * Arctext.js
  * A jQuery plugin for curved text
@@ -8,7 +10,7 @@
  *
  * Date: Mon Jan 23 2012
  */
-console.log("tata");
+
 
 (function( $, undefined ) {
 	
