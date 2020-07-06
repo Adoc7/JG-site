@@ -25,15 +25,18 @@
         </div>
     </div>
 
-<div class="container-fluid px-sm-5">
-    <div class="row">
- 
+<div class="container-fluid px-sm-5 pt-5">
+    
+        <div class="row text-center mb-5 px-sm-5 pb-5">      
+        <div class="col-12 mb-4">     
+            <h2 class="display-3">Videos de Sites et d'Apps Mobiles</h2>
+        </div>
 
-            <div *ngFor="let developpement of portfolioDev" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 white text-center py-5">
+            <div *ngFor="let developpement of portfolioDev" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 white text-center mt-xl-5 py-5">
                 <p>{{developpement.over_title}}</p>                   
                 <h2 class="title-part-2 pb-5">{{developpement.title}}</h2>  
             
-                <div class="col-12">
+                <div class="col-12" data-aos="zoom-out" data-aos-duration="500">
                     <a href="{{developpement.modal}}" data-toggle="modal">
                         <img src="{{developpement.path}}" class="p-3 mb-5 img-fluid hoverable">
                     </a>                          
@@ -56,6 +59,7 @@
                     </div>
                 </div> 
             </div><!--FIN ngFor-->   
+        
         </div><!--FIN ROW DEVELOPPEMENT-->
 </div><!--FIN Container DEVELOPPEMENT--> 
 
