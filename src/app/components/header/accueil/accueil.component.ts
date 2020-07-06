@@ -14,8 +14,8 @@ export class AccueilComponent implements OnInit {
     private route: Router,
   ) { }
 
-  ngOnInit(): any {
-   
+  ngOnInit(): void {
+
     $('.phrase').arctext({ radius: 800 });
     var position = $(window).scrollTop(); 
 $(window).scroll(function() {

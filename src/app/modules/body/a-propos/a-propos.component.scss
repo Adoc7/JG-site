@@ -7,6 +7,9 @@
 h1{
   font-size:3.5em!important; 
   letter-spacing: -0.04em !important; 
+  line-height:0.8em;
+  padding-bottom:0.8em;
+
 }
 @media (min-width: 576px) {
   h1{
@@ -14,6 +17,7 @@ h1{
       font-weight:900!important;
       font-size:5em!important; 
       letter-spacing: -0.08em !important;  
+      
     } 
 }
 @media (min-width:1200px) {  
@@ -29,7 +33,7 @@ h1{
   letter-spacing: -0.01em !important; 
    text-shadow: black 0.05em 0.05em 0.05em;
    padding-bottom:2%;
- /*   letter-spacing: 3em !important;   */ 
+   font-size:4em!important; 
   }
   #opacite{
     opacity:0.6!important; 
@@ -41,3 +45,16 @@ h1{
     height:auto;
     vertical-align:middle; 
   }
+
+i{color:#43A5BE;}
+
+.btn-primary:hover{
+  background-color: white!important;
+  color:#43A5BE;
+  border-color:#43A5BE!important;
+}
+.btn-primary{
+  background-color: white!important;
+  color:black;
+  border-color:black!important;
+}
