@@ -32,13 +32,17 @@
             <h2 class="display-3">Videos de Sites et d'Apps Mobiles</h2>
         </div>
 
+
             <div *ngFor="let developpement of portfolioDev" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 white text-center mt-xl-5 py-5">
                 <p>{{developpement.over_title}}</p>                   
                 <h2 class="title-part-2 pb-5">{{developpement.title}}</h2>  
             
                 <div class="col-12" data-aos="zoom-out" data-aos-duration="500">
                     <a href="{{developpement.modal}}" data-toggle="modal">
-                        <img src="{{developpement.path}}" class="p-3 mb-5 img-fluid hoverable">
+
+                        <app-loader *ngIf="!loaded"></app-loader> 
+                        <img *ngIf="loaded" src="{{developpement.path}}" class="p-3 mb-5 img-fluid hoverable">
+                        
                     </a>                          
                     <p>{{developpement.content_over_title}}</p>
                     <h2 class="title-part-3">{{developpement.content_title}}</h2>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 declare var $:any;
@@ -8,7 +8,12 @@ declare var $:any;
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
+
 export class ContactComponent implements OnInit {
+  @ViewChild('contactForm', {
+    static: false
+}) contactForm: NgForm;
+  
   constructor(
     private http: HttpClient,
     ) {}
@@ -62,11 +67,12 @@ export class ContactComponent implements OnInit {
         { 'headers': headers }).subscribe(
           response => {
             console.log(response);
+            this.contactForm.reset(response);
           }
-        );
-    }else{
-      alert("Le formulaire n'est pas validé.\nVeuillez saisir correctement les champs obligatoires");
+          );
+        }else{
+          alert("Le formulaire n'est pas validé.\nVeuillez saisir correctement les champs obligatoires");
+        }
+      }
+      
     }
-  }
-
-}

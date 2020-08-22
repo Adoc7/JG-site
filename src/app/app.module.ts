@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ContentLoaderModule } from '@ngneat/content-loader';
 import { AppComponent } from './app.component';
 import { AccueilComponent } from './components/header/accueil/accueil.component';
 import { NavbarComponent } from './components/header/navbar/navbar.component';
@@ -24,6 +25,7 @@ import { InfographieModule } from './modules/body/portfolios/infographie/infogra
 import { ModalModule } from './modules/body/portfolios/modal/modal.module';
 import { ErrorComponent } from './components/error/error.component';
 import { FooterModule } from './modules/footer/footer/footer.module';
+import { LoaderComponent } from './components/loader/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -33,9 +35,11 @@ import { FooterModule } from './modules/footer/footer/footer.module';
     PortfoliosComponent, 
     DeveloppementComponent,
     ErrorComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
+    ContentLoaderModule,
     AppRootingModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),

@@ -25,6 +25,7 @@ export class TechnologieService {
       new Technologie (1, 'Photoshop', "", "assets/img/logos/ad_phot.svg"),
       new Technologie (2, 'Illustrator', "", "assets/img/logos/ad_ill.svg"),
       new Technologie (3, 'InDesign', "", "assets/img/logos/ad_ind.svg" ),
+      new Technologie (4, 'AfterEffect', "", "assets/img/logos/ad_ae.svg" ),
     ];
     this.front_langages = [
       new Technologie (1, 'html 5', "", "assets/img/logos/html5.svg"),
@@ -35,14 +36,15 @@ export class TechnologieService {
       new Technologie (6, 'Ajax', "", "assets/img/logos/ajax.svg"),
     ];
     this.front_frameworks = [
-      new Technologie (1, 'Bootstrap 4', "", "assets/img/logos/bootstrap.svg"),
+      new Technologie (1, 'Bootstrap 4 et 5', "", "assets/img/logos/bootstrap.svg"),
       new Technologie (2, 'Angular 9', "", "assets/img/logos/angular.svg"),
       new Technologie (3, 'Cordova', "","assets/img/logos/cordova.svg" ),
     ];
     this.front_librairies = [
-      new Technologie (1, 'React', "", "assets/img/logos/react.svg"),
-      new Technologie (2, 'jQuery', "", "assets/img/logos/jquery.svg"),
-      new Technologie (3, 'Three.JS', "", "assets/img/logos/3js.svg" ),
+      new Technologie (1, 'React JS', "", "assets/img/logos/react.svg"),
+      new Technologie (2, 'React Native', "", "assets/img/logos/react.svg"),
+      new Technologie (3, 'jQuery', "", "assets/img/logos/jquery.svg"),
+      new Technologie (4, 'Three.JS', "", "assets/img/logos/3js.svg" ),
     ];
     this.front_cms = [
       new Technologie (1, 'Presta Shop', "", "assets/img/logos/prestashop.svg"),
@@ -55,7 +57,7 @@ export class TechnologieService {
       new Technologie (3, 'MySQL', "", "assets/img/logos/mysql.svg"),
     ];
     this.back_frameworks = [
-      new Technologie (1, 'Symfony 4', "", "assets/img/logos/symfony.svg"),
+      new Technologie (1, 'Symfony 4 et 5', "", "assets/img/logos/symfony.svg"),
       new Technologie (2, 'Doctrine', "", "assets/img/logos/doctrine.svg"),
       new Technologie (3, 'Twig', "", "assets/img/logos/twig.svg" ),
       new Technologie (4, 'Composer', "", "assets/img/logos/composer.svg" ),
